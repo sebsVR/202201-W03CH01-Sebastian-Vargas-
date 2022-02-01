@@ -1,23 +1,18 @@
 import { Adviser } from './classes/Adviser.js';
-import { King } from './classes/King';
+import { King } from './classes/King.js';
 import { Knight } from './classes/Knight.js';
 import { Squire } from './classes/Squire.js';
-import { chars } from 'characters.js';
 import { Character } from './classes/Character.js';
 
-const joffreyBaratheon = new King('Joffrey Baratheon');
-const jaimeLannister = new Knight('Jaime', 'Lannister');
-const daenerysTargaryen = new Knight('Daenerys', 'Targaryen');
-const tyrionLannister = new Knight('Tyrion', 'Lannister');
-const bronn = new Squire('Bronn');
+const joffrey = new King('Joffrey', 'Baratheon', 77, 8);
+const jaime = new Knight('Jaime', 'Lannister', 55, 'Knife', 7);
+const daenerys = new Knight('Daenerys', 'Targaryen', 35, 'Running', 8);
+const tyrion = new Knight('Tyrion', 'Lannister', 44, 'Sword', 10);
+const bronn = new Squire('Bronn', 'Peterson', 33, 9);
 
-tyrionLannister.patrin = daenerysTargaryen;
-bronn.patron = jaimeLannister;
+tyrion.patron = daenerys;
+bronn.patron = jaime;
 
-export const chars = [
-    joffreyBaratheon,
-    jaimeLannister,
-    daenerysTargaryen,
-    tyrionLannister,
-    bronn,
-];
+export const chars = [joffrey, jaime, daenerys, tyrion, bronn];
+
+console.log(chars);
