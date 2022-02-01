@@ -5,8 +5,12 @@ export class Character {
             (this.age = age),
             (this.state = status);
     }
-    communicate() {}
+    communicate() {
+        return this.sentence;
+    }
     dies() {
         this.status = 'dead';
     }
 }
+
+Character.prototype.series = 'GoT';

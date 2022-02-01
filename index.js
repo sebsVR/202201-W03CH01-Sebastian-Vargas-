@@ -2,8 +2,8 @@ import { Adviser } from './classes/Adviser.js';
 import { King } from './classes/King.js';
 import { Knight } from './classes/Knight.js';
 import { Squire } from './classes/Squire.js';
-import { chars } from 'characters.js';
-import { Character } from './classes/Character.js
+import { chars } from './characters.js';
+import { Character } from './classes/Character.js';
 
 // bronn.patron = jaimeLannister;
 console.log(chars);
