@@ -2,7 +2,7 @@ import { Adviser } from './classes/Adviser.js';
 import { King } from './classes/King.js';
 import { Knight } from './classes/Knight.js';
 import { Squire } from './classes/Squire.js';
-import { Character } from './classes/Character.js';
+// import { Character } from './classes/Character.js';
 
 const joffrey = new King('Joffrey', 'Baratheon', 77, 8);
 const jaime = new Knight('Jaime', 'Lannister', 55, 'Knife', 7);
